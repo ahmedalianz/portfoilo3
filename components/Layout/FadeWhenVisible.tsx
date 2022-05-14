@@ -1,7 +1,11 @@
+/* eslint-disable import/order */
+
 import React, { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
 import { motion, useAnimation } from 'framer-motion'
+
 import { fadeInUpSlower } from 'config/animations'
+import { useInView } from 'react-intersection-observer'
+
 const FadeInWhenVisible = ({ children }: { children: React.ReactNode }) => {
   const controls = useAnimation()
   const [ref, inView] = useInView({
