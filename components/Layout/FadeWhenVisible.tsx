@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer'
 const FadeInWhenVisible = ({ children }: { children: React.ReactNode }) => {
   const controls = useAnimation()
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.1,
   })
 
   useEffect(() => {
