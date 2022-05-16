@@ -182,7 +182,7 @@ const FeaturedWorksSection = () => {
           width="120px"
           variants={simpleOpacity}
           as={'a'}
-          href="https://ahmedalian2.vercel.app/projects"
+          href="https://ahmedalian.vercel.app/projects"
           target="_blank"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
