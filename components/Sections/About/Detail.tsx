@@ -10,13 +10,7 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react'
-import {
-  SiAngular,
-  SiJavascript,
-  SiNextdotjs,
-  SiReact,
-  SiTypescript,
-} from 'react-icons/si'
+import { SiAngular, SiJavascript, SiReact, SiTypescript } from 'react-icons/si'
 
 import { FaNode } from 'react-icons/fa'
 import { IoMdOpen } from 'react-icons/io'
@@ -75,8 +69,8 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             React
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextdotjs} color={emphasis} fontSize="2em" />
-            NextJS
+            <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
+            React Native
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiAngular} color={emphasis} fontSize="2em" />

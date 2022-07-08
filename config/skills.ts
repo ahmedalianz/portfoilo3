@@ -52,7 +52,7 @@ export const Skills: {
       icon: SiTypescript,
     },
     {
-      name: 'PHP (In Progress)',
+      name: 'PHP (General Knowledge)',
       icon: SiPhp,
     },
   ],
@@ -66,7 +66,7 @@ export const Skills: {
       icon: SiExpress,
     },
     {
-      name: 'Laravel (In Progress)',
+      name: 'Laravel (General Knowledge)',
       icon: SiLaravel,
     },
   ],
@@ -87,6 +87,10 @@ export const Skills: {
       name: 'Angular',
       icon: SiAngular,
     },
+    {
+      name: 'React Native',
+      icon: SiReact,
+    },
   ],
   database: [
     {
@@ -94,7 +98,7 @@ export const Skills: {
       icon: SiMongodb,
     },
     {
-      name: 'MySQL (In Progress)',
+      name: 'MySQL (General Knowledge)',
       icon: SiMysql,
     },
     {

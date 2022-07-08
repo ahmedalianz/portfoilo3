@@ -122,8 +122,8 @@ const Sidebar = () => {
           >
             I am a self-taught developer with a passion for learning new
             technologies and building web applications. I am currently
-            Strengthening My Knowledge about Angular & Angular Material. and i
-            intend to learn PHP as a backEnd also ,How time flies..
+            Strengthening My Knowledge about frontEnd in General. and i intend
+            to learn More ,How time flies..
           </MotionText>
           <MotionButton
             size="lg"
