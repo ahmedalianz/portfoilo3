@@ -12,8 +12,8 @@ import { avatarAnimation } from 'config/animations'
 import { useEffect } from 'react'
 
 const AvatarImages = {
-  DarkMode: '/profile.jfif',
-  LightMode: './profile.jfif',
+  DarkMode: '/profile-dark.jpeg',
+  LightMode: '/profile-dark.jpeg',
 }
 
 declare global {

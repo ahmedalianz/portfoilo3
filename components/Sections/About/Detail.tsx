@@ -24,7 +24,6 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
   const currentYear = new Date().getFullYear()
   const professionalYears = currentYear - 2021
-
   return (
     <Stack
       width={{ base: '100%', lg: '70%' }}
@@ -42,8 +41,15 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         What i do.
       </Heading>
       <Text variant="description">
-        I am a Web developer with a passion for creating beautiful and intuitive
-        user interfaces. I have a background in web development. <br /> <br />
+        Highly skilled and creative frontend developer with {professionalYears}{' '}
+        years of experience creating visually stunning and user-friendly
+        websites and applications. Proficient in JavaScript, and it&apos;s
+        front-end technologies, with a deep understanding of responsive design
+        cross-browser compatibility. and collaborated with great developers
+        using React.js / React Native, Angular, Node.js, and using git as
+        version control.Passionate about staying up-to-date with the latest
+        trends and best practices in web development.
+        <br /> <br />
         Here are the Technologies that i use
       </Text>
 

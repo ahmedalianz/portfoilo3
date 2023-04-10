@@ -1,6 +1,4 @@
-import { Link } from '@chakra-ui/react'
-
-export type Company = 'WebSquids'
+export type Company = string
 
 export type CompanyDetail = {
   name: string
@@ -46,6 +44,30 @@ export const Experiences: {
       </>,
     ],
   },
+  Ejada: {
+    name: 'Ejada Systems LTD',
+    longName: 'Ejada Systems LTD',
+    url: 'https://www.ejada.com/',
+    position: 'Software Developer',
+    duration: 'Jul 2021 - Present',
+    logo: {
+      light: '/worked_at_logos/ejada/logo.png',
+      dark: '/worked_at_logos/ejada/logo.png',
+    },
+    roles: [
+      <>Built most of the project common components. </>,
+      <> Added detailed ReadMe that helped the new joiners a lot. </>,
+      <>
+        {' '}
+        Led a squad of 3 developers as their reviewer/supporter for a month.{' '}
+      </>,
+      <>
+        {' '}
+        Meetings with integration and business teams to make field-level
+        analyses for some sprints.
+      </>,
+    ],
+  },
 }
 
-export const ExperiencesList = [Experiences.WebSquids]
+export const ExperiencesList = [Experiences.Ejada, Experiences.WebSquids]

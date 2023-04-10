@@ -7,13 +7,10 @@ import {
   SiGit,
   SiJavascript,
   SiJirasoftware,
-  SiLaravel,
   SiMaterialui,
   SiMongodb,
-  SiMysql,
   SiNextdotjs,
   SiNodedotjs,
-  SiPhp,
   SiReact,
   SiRedux,
   SiSass,
@@ -51,10 +48,6 @@ export const Skills: {
       name: 'Typescript',
       icon: SiTypescript,
     },
-    {
-      name: 'PHP (General Knowledge)',
-      icon: SiPhp,
-    },
   ],
   backend: [
     {
@@ -64,10 +57,6 @@ export const Skills: {
     {
       name: 'Express Js',
       icon: SiExpress,
-    },
-    {
-      name: 'Laravel (General Knowledge)',
-      icon: SiLaravel,
     },
   ],
   frontend: [
@@ -96,10 +85,6 @@ export const Skills: {
     {
       name: 'MongoDb',
       icon: SiMongodb,
-    },
-    {
-      name: 'MySQL (General Knowledge)',
-      icon: SiMysql,
     },
     {
       name: 'SocketIO',

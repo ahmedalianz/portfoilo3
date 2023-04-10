@@ -121,8 +121,7 @@ const Sidebar = () => {
             maxWidth={{ base: '100%', lg: '80%' }}
           >
             I am a self-taught developer with a passion for learning new
-            technologies and building web applications. I am currently
-            Strengthening My Knowledge about frontEnd in General. and i intend
+            technologies and building web/mobile applications. and i intend to
             to learn More ,How time flies..
           </MotionText>
           <MotionButton

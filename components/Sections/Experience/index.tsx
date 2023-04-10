@@ -24,8 +24,8 @@ const DetailSection = () => (
       to hone my skills and talents. These companies will always have a special
       place in my heart.  */}
       Currently I am working with{' '}
-      <Link href="https://websquids.com/" target="_blank" rel="noreferrer">
-        Websquids LLC
+      <Link href="https://ejada.com/" target="_blank" rel="noreferrer">
+        Ejada Systems LTD
       </Link>
       .
     </Text>
