@@ -17,25 +17,25 @@ import {
   SimpleGrid,
   Text,
   useColorModeValue,
-} from '@chakra-ui/react'
-import { Skill, Skills, splitSkills } from 'config/skills'
+} from '@chakra-ui/react';
+import { Skill, Skills, splitSkills } from 'config/skills';
 
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
 type ISkillSetModal = {
-  isOpen: boolean
-  onClose(): void
-}
+  isOpen: boolean;
+  onClose(): void;
+};
 
 const SkillList = ({
   title,
   columns,
 }: {
-  title: string
-  columns: Skill[][]
+  title: string;
+  columns: Skill[][];
 }) => {
-  const emphasis = useColorModeValue('teal.500', 'cyan.200')
-  const [colOne, colTwo = []] = columns
+  const emphasis = useColorModeValue('teal.500', 'cyan.200');
+  const [colOne, colTwo = []] = columns;
   return (
     <>
       <Heading as="div" size="sm" paddingBottom={1} variant="description">
@@ -71,15 +71,15 @@ const SkillList = ({
         </List>
       </SimpleGrid>
     </>
-  )
-}
+  );
+};
 const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
-  const backendCols = splitSkills(Skills.backend)
-  const frontendCols = splitSkills(Skills.frontend)
-  const CoreCols = splitSkills(Skills.core)
-  const dataBaseCols = splitSkills(Skills.database)
-  const uiFrameWorkCols = splitSkills(Skills['ui frameworks'])
-  const productivityCols = splitSkills(Skills['productivity boost'])
+  const backendCols = splitSkills(Skills.backend);
+  const frontendCols = splitSkills(Skills.frontend);
+  const CoreCols = splitSkills(Skills.core);
+  const dataBaseCols = splitSkills(Skills.database);
+  const uiFrameWorkCols = splitSkills(Skills['ui frameworks']);
+  const productivityCols = splitSkills(Skills['productivity boost']);
   return (
     <Modal
       isOpen={isOpen}
@@ -104,7 +104,7 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
         </ModalFooter>
       </ModalContent>
     </Modal>
-  )
-}
+  );
+};
 
-export default SkillSetModal
+export default SkillSetModal;

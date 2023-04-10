@@ -1,8 +1,8 @@
 /* eslint-disable react/no-multi-comp */
 
-import * as React from 'react'
+import * as React from 'react';
 
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Path = (props: any) => (
@@ -13,14 +13,14 @@ const Path = (props: any) => (
     strokeLinecap="round"
     {...props}
   />
-)
+);
 
 export const MenuToggle = ({
   toggle,
   isDarkMode = false,
 }: {
-  toggle(): void
-  isDarkMode?: boolean
+  toggle(): void;
+  isDarkMode?: boolean;
 }) => (
   <button
     onClick={toggle}
@@ -58,16 +58,16 @@ export const MenuToggle = ({
       />
     </svg>
   </button>
-)
+);
 
 const MobileMenu = ({
   isOpen,
   toggle,
   isDarkMode = false,
 }: {
-  isOpen: boolean
-  isDarkMode: boolean
-  toggle(): void
+  isOpen: boolean;
+  isDarkMode: boolean;
+  toggle(): void;
 }) => (
   <motion.nav
     initial={false}
@@ -80,6 +80,6 @@ const MobileMenu = ({
     {/* <motion.div className="background" variants={sidebar} /> */}
     <MenuToggle toggle={() => toggle()} isDarkMode={isDarkMode} />
   </motion.nav>
-)
+);
 
-export default MobileMenu
+export default MobileMenu;

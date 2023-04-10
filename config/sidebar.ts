@@ -1,12 +1,12 @@
-import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
-import { IconType } from 'react-icons'
+import { IconType } from 'react-icons';
 
 type SocialMedia = {
-  label: string
-  href: string
-  icon: IconType
-}
+  label: string;
+  href: string;
+  icon: IconType;
+};
 
 export const SocialMedias: SocialMedia[] = [
   {
@@ -25,4 +25,4 @@ export const SocialMedias: SocialMedia[] = [
     href: 'https://www.facebook.com/ahmed.tiger.300/',
     icon: FaFacebook,
   },
-]
+];

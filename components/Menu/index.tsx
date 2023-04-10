@@ -1,15 +1,15 @@
-import { useEffect } from 'react'
+import { useEffect } from 'react';
 import {
   Container,
   useColorModeValue,
   useBreakpointValue,
-} from '@chakra-ui/react'
-import { motion, Variants, useAnimation } from 'framer-motion'
-import Logo from '../Logo'
-import styles from './styles.module.css'
-import Navigation from './Navigation'
-import { mobileBreakpointsMap } from 'config/theme'
-import useScrollDirection, { ScrollDirection } from 'hooks/useScrollDirection'
+} from '@chakra-ui/react';
+import { motion, Variants, useAnimation } from 'framer-motion';
+import Logo from '../Logo';
+import styles from './styles.module.css';
+import Navigation from './Navigation';
+import { mobileBreakpointsMap } from 'config/theme';
+import useScrollDirection, { ScrollDirection } from 'hooks/useScrollDirection';
 
 const mobileMenuVariants: Variants = {
   hidden: {
@@ -28,20 +28,20 @@ const mobileMenuVariants: Variants = {
       duration: 0.28,
     },
   },
-}
+};
 
 const Menu = () => {
-  const bg = useColorModeValue('gray.100', 'black')
-  const controls = useAnimation()
-  const isMobile = useBreakpointValue(mobileBreakpointsMap)
-  const scrollDirection = useScrollDirection(true, isMobile)
+  const bg = useColorModeValue('gray.100', 'black');
+  const controls = useAnimation();
+  const isMobile = useBreakpointValue(mobileBreakpointsMap);
+  const scrollDirection = useScrollDirection(true, isMobile);
   useEffect(() => {
     if (scrollDirection === ScrollDirection.Down && isMobile) {
-      controls.start('hidden')
+      controls.start('hidden');
     } else {
-      controls.start('show')
+      controls.start('show');
     }
-  }, [isMobile, controls, scrollDirection])
+  }, [isMobile, controls, scrollDirection]);
   return (
     <motion.div
       initial={isMobile ? 'hidden' : false}
@@ -64,7 +64,7 @@ const Menu = () => {
         <Navigation />
       </Container>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

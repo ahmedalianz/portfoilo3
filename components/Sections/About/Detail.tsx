@@ -9,21 +9,21 @@ import {
   Stack,
   Text,
   useColorModeValue,
-} from '@chakra-ui/react'
-import { SiAngular, SiJavascript, SiReact, SiTypescript } from 'react-icons/si'
+} from '@chakra-ui/react';
+import { SiAngular, SiJavascript, SiReact, SiTypescript } from 'react-icons/si';
 
-import { FaNode } from 'react-icons/fa'
-import { IoMdOpen } from 'react-icons/io'
-import { memo } from 'react'
+import { FaNode } from 'react-icons/fa';
+import { IoMdOpen } from 'react-icons/io';
+import { memo } from 'react';
 
 type ISkillSetModal = {
-  onOpen(): void
-}
+  onOpen(): void;
+};
 
 const Detail = ({ onOpen }: ISkillSetModal) => {
-  const emphasis = useColorModeValue('teal.500', 'cyan.200')
-  const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2021
+  const emphasis = useColorModeValue('teal.500', 'cyan.200');
+  const currentYear = new Date().getFullYear();
+  const professionalYears = currentYear - 2021;
   return (
     <Stack
       width={{ base: '100%', lg: '70%' }}
@@ -96,7 +96,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         </Box>
       </SimpleGrid>
     </Stack>
-  )
-}
+  );
+};
 
-export default memo(Detail)
+export default memo(Detail);

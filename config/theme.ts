@@ -3,35 +3,35 @@ import {
   ColorMode,
   ChakraTheme,
   ThemeComponentProps,
-} from '@chakra-ui/react'
-import { mode } from '@chakra-ui/theme-tools'
+} from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
 
 interface IThemeMode {
-  Light: ColorMode
-  Dark: ColorMode
+  Light: ColorMode;
+  Dark: ColorMode;
 }
 
 export const ThemeMode: IThemeMode = {
   Light: 'light',
   Dark: 'dark',
-}
+};
 
 export const mobileBreakpointsMap = {
   base: true,
   md: true,
   lg: true,
   xl: false,
-}
+};
 
 // Theme Config
 const config = {
   initialColorMode: ThemeMode.Dark,
   useSystemColorMode: false,
-}
+};
 
 const colors = {
   black: '#121212',
-}
+};
 
 const styles = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -41,7 +41,7 @@ const styles = {
       bg: mode('gray.100', '#121212')(props),
     },
   }),
-}
+};
 
 const textVariants = {
   emphasis: (props: ThemeComponentProps<ChakraTheme>) => ({
@@ -56,7 +56,7 @@ const textVariants = {
   accentAlternative: (props: ThemeComponentProps<ChakraTheme>) => ({
     color: mode('#595959', '#A6A6A6')(props),
   }),
-}
+};
 
 const theme = extendTheme({
   config,
@@ -122,5 +122,5 @@ const theme = extendTheme({
       },
     },
   },
-})
-export default theme
+});
+export default theme;

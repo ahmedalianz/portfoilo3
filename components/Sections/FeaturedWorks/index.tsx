@@ -8,21 +8,21 @@ import {
   Stack,
   Text,
   useBreakpointValue,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 import {
   fadeInUpSlower,
   galleryStagger,
   simpleOpacity,
-} from 'config/animations'
+} from 'config/animations';
 
-import { Center } from '@chakra-ui/react'
-import FeaturedCard from './FeaturedCard'
-import { memo } from 'react'
-import { mobileBreakpointsMap } from 'config/theme'
-import { motion } from 'framer-motion'
+import { Center } from '@chakra-ui/react';
+import FeaturedCard from './FeaturedCard';
+import { memo } from 'react';
+import { mobileBreakpointsMap } from 'config/theme';
+import { motion } from 'framer-motion';
 
-const MotionGrid = motion(Grid)
-const MotionGridItem = motion(GridItem)
+const MotionGrid = motion(Grid);
+const MotionGridItem = motion(GridItem);
 const projects = [
   {
     id: 1,
@@ -82,11 +82,11 @@ const projects = [
 
     desc: "In This Application You Can Order Pizza , You can add Topping , Add To Cart , Checkout ,you can pay cash or via paypal,the admin can contol products & orders create new Pizzas and more , It Supports Two Languages (English & Arabic),  It's also very responsive Design",
   },
-]
+];
 const FeaturedWorksSection = () => {
-  const MotionButton = motion(Button)
+  const MotionButton = motion(Button);
 
-  const isMobile = useBreakpointValue(mobileBreakpointsMap)
+  const isMobile = useBreakpointValue(mobileBreakpointsMap);
   return (
     <Stack
       width={{ base: '99%', lg: '60%', xl: '75%' }}
@@ -205,7 +205,7 @@ const FeaturedWorksSection = () => {
         </MotionButton>
       </Center>
     </Stack>
-  )
-}
+  );
+};
 
-export default memo(FeaturedWorksSection)
+export default memo(FeaturedWorksSection);

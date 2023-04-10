@@ -1,19 +1,19 @@
 /* eslint-disable import/order */
 
-import { AnimatePresence, motion } from 'framer-motion'
-import { Image, useBreakpointValue, useColorMode } from '@chakra-ui/react'
-import { ThemeMode, mobileBreakpointsMap } from 'config/theme'
-import { memo, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion';
+import { Image, useBreakpointValue, useColorMode } from '@chakra-ui/react';
+import { ThemeMode, mobileBreakpointsMap } from 'config/theme';
+import { memo, useState } from 'react';
 
-import Link from 'next/link'
-import { simpleOpacity } from 'config/animations'
-import styles from './styles.module.css'
+import Link from 'next/link';
+import { simpleOpacity } from 'config/animations';
+import styles from './styles.module.css';
 
 const Logo = () => {
-  const { colorMode } = useColorMode()
-  const [isLogoLoaded, setLogoLoaded] = useState(false)
-  const MotionImage = motion(Image)
-  const isMobile = useBreakpointValue(mobileBreakpointsMap)
+  const { colorMode } = useColorMode();
+  const [isLogoLoaded, setLogoLoaded] = useState(false);
+  const MotionImage = motion(Image);
+  const isMobile = useBreakpointValue(mobileBreakpointsMap);
   return (
     <AnimatePresence>
       <Link href="/" passHref>
@@ -48,7 +48,7 @@ const Logo = () => {
         )}
       </Link>
     </AnimatePresence>
-  )
-}
+  );
+};
 
-export default memo(Logo)
+export default memo(Logo);

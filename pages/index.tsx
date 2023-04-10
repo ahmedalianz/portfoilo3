@@ -7,31 +7,31 @@ import {
   GridItem,
   Stack,
   useBreakpointValue,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 
-import About from 'components/Sections/About'
-import Avatar from 'components/Avatar'
-import Experience from 'components/Sections/Experience'
-import FadeInLayout from 'components/Layout/FadeWhenVisible'
-import FeaturedWorks from 'components/Sections/FeaturedWorks'
-import Menu from 'components/Menu'
-import OpenGraphHead from 'components/Misc/OpenGraphHead'
-import ScrollMore from 'components/Misc/ScrollMore'
-import Sidebar from 'components/Sidebar'
-import dynamic from 'next/dynamic'
+import About from 'components/Sections/About';
+import Avatar from 'components/Avatar';
+import Experience from 'components/Sections/Experience';
+import FadeInLayout from 'components/Layout/FadeWhenVisible';
+import FeaturedWorks from 'components/Sections/FeaturedWorks';
+import Menu from 'components/Menu';
+import OpenGraphHead from 'components/Misc/OpenGraphHead';
+import ScrollMore from 'components/Misc/ScrollMore';
+import Sidebar from 'components/Sidebar';
+import dynamic from 'next/dynamic';
 
 // These are on bottom sections so no need to render it instantly
-const GetInTouch = dynamic(() => import('components/Sections/GetInTouch'))
+const GetInTouch = dynamic(() => import('components/Sections/GetInTouch'));
 
 const Portfolio = (): JSX.Element => {
-  const sideBarPadding = useBreakpointValue({ base: '5', md: '8', lg: '14' })
+  const sideBarPadding = useBreakpointValue({ base: '5', md: '8', lg: '14' });
   const mainContent = useBreakpointValue({
     base: '5',
     md: '14',
     lg: '14',
     xl: 0,
-  })
-  const paddTop = useBreakpointValue({ base: '20', sm: 20, md: 20 })
+  });
+  const paddTop = useBreakpointValue({ base: '20', sm: 20, md: 20 });
 
   return (
     <>
@@ -130,7 +130,7 @@ const Portfolio = (): JSX.Element => {
       </Grid>
       <ScrollMore />
     </>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

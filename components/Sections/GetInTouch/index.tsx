@@ -1,8 +1,8 @@
-import { Heading, Link, Stack, Text } from '@chakra-ui/react'
-import { Variants, motion } from 'framer-motion'
+import { Heading, Link, Stack, Text } from '@chakra-ui/react';
+import { Variants, motion } from 'framer-motion';
 
-import { memo } from 'react'
-import { useInView } from 'react-intersection-observer'
+import { memo } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const rimuruVariant: Variants = {
   shake: {
@@ -23,10 +23,10 @@ const rimuruVariant: Variants = {
       ease: 'easeInOut',
     },
   },
-}
+};
 
 const GetInTouch = () => {
-  const [ref, inView] = useInView()
+  const [ref, inView] = useInView();
   return (
     <Stack
       width={{ base: '99%', lg: '60%', xl: '75%' }}
@@ -64,7 +64,7 @@ const GetInTouch = () => {
         .
       </Text>
     </Stack>
-  )
-}
+  );
+};
 
-export default memo(GetInTouch)
+export default memo(GetInTouch);

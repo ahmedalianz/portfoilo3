@@ -18,10 +18,10 @@ import {
   SiStyledcomponents,
   SiTypescript,
   SiVisualstudiocode,
-} from 'react-icons/si'
+} from 'react-icons/si';
 
-import { BsQuestionSquare } from 'react-icons/bs'
-import { IconType } from 'react-icons'
+import { BsQuestionSquare } from 'react-icons/bs';
+import { IconType } from 'react-icons';
 
 export type SkillCategory =
   | 'core'
@@ -29,15 +29,15 @@ export type SkillCategory =
   | 'backend'
   | 'database'
   | 'ui frameworks'
-  | 'productivity boost'
+  | 'productivity boost';
 
 export type Skill = {
-  name: string
-  icon: IconType
-}
+  name: string;
+  icon: IconType;
+};
 
 export const Skills: {
-  [key in SkillCategory]: Skill[]
+  [key in SkillCategory]: Skill[];
 } = {
   core: [
     {
@@ -140,24 +140,24 @@ export const Skills: {
       icon: SiJirasoftware,
     },
   ],
-}
+};
 
 export const splitSkills = (srcArray: Skill[]) => {
-  const arrLength = srcArray.length
-  const isEvenChunk = arrLength % 2 === 0
+  const arrLength = srcArray.length;
+  const isEvenChunk = arrLength % 2 === 0;
 
-  let chunk = 4
+  let chunk = 4;
   if (isEvenChunk) {
-    chunk = arrLength / 2
+    chunk = arrLength / 2;
   } else if (arrLength <= 5 && arrLength > 2) {
-    chunk = 3
+    chunk = 3;
   }
 
-  let i = 0
-  let j = 0
-  const temporary = []
+  let i = 0;
+  let j = 0;
+  const temporary = [];
   for (i = 0, j = srcArray.length; i < j; i += chunk) {
-    temporary.push(srcArray.slice(i, i + chunk))
+    temporary.push(srcArray.slice(i, i + chunk));
   }
-  return temporary
-}
+  return temporary;
+};

@@ -19,19 +19,19 @@ import {
   useBreakpointValue,
   useColorMode,
   useColorModeValue,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 
-import { BiRightArrow } from 'react-icons/bi'
-import { ExperiencesList } from 'config/experience'
-import { mobileBreakpointsMap } from 'config/theme'
-import styles from './styles.module.css'
+import { BiRightArrow } from 'react-icons/bi';
+import { ExperiencesList } from 'config/experience';
+import { mobileBreakpointsMap } from 'config/theme';
+import styles from './styles.module.css';
 
 const ExperienceTab = () => {
-  const { colorMode } = useColorMode()
-  const emphasis = useColorModeValue('teal.500', 'cyan.200')
-  const borderColor = useColorModeValue('gray.300', 'gray.600')
-  const activeBordercolor = useColorModeValue('teal.500', '#97DFFC')
-  const isMobile = useBreakpointValue(mobileBreakpointsMap)
+  const { colorMode } = useColorMode();
+  const emphasis = useColorModeValue('teal.500', 'cyan.200');
+  const borderColor = useColorModeValue('gray.300', 'gray.600');
+  const activeBordercolor = useColorModeValue('teal.500', '#97DFFC');
+  const isMobile = useBreakpointValue(mobileBreakpointsMap);
 
   const tabOrientation =
     useBreakpointValue({
@@ -40,7 +40,7 @@ const ExperienceTab = () => {
       md: 'vertical',
       lg: 'vertical',
       xl: 'vertical',
-    }) ?? ('vertical' as any)
+    }) ?? ('vertical' as any);
 
   const tabMinWidth = useBreakpointValue({
     base: '160px',
@@ -48,7 +48,7 @@ const ExperienceTab = () => {
     md: 'auto',
     lg: 'auto',
     xl: 'auto',
-  })
+  });
   return (
     <Tabs id="experienceTabs" orientation={tabOrientation} isLazy>
       <TabList
@@ -139,7 +139,7 @@ const ExperienceTab = () => {
         ))}
       </TabPanels>
     </Tabs>
-  )
-}
+  );
+};
 
-export default ExperienceTab
+export default ExperienceTab;

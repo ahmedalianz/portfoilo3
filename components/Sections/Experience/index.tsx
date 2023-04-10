@@ -1,9 +1,9 @@
 /* eslint-disable import/order */
 
-import { Heading, Link, Stack, Text } from '@chakra-ui/react'
+import { Heading, Link, Stack, Text } from '@chakra-ui/react';
 
-import ExperienceTab from './ExperienceTab'
-import { memo } from 'react'
+import ExperienceTab from './ExperienceTab';
+import { memo } from 'react';
 
 const DetailSection = () => (
   <Stack
@@ -32,6 +32,6 @@ const DetailSection = () => (
 
     <ExperienceTab />
   </Stack>
-)
+);
 
-export default memo(DetailSection)
+export default memo(DetailSection);

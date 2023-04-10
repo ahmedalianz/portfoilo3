@@ -13,24 +13,24 @@ import {
   Stack,
   Text,
   useColorModeValue,
-} from '@chakra-ui/react'
-import { DURATIONS, easing } from 'config/animations'
+} from '@chakra-ui/react';
+import { DURATIONS, easing } from 'config/animations';
 
-import { motion } from 'framer-motion'
-import styles from './styles.module.css'
+import { motion } from 'framer-motion';
+import styles from './styles.module.css';
 
 export type FeaturedCardProps = {
   // Still can't find what's correct value for responsive value
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  height: string | ResponsiveValue<any>
-  src: string
-  idx: number
-  title: string
-  description: string
-  objectPosition?: string
-  ctaUrl: string
-  isMobile?: boolean
-}
+  height: string | ResponsiveValue<any>;
+  src: string;
+  idx: number;
+  title: string;
+  description: string;
+  objectPosition?: string;
+  ctaUrl: string;
+  isMobile?: boolean;
+};
 
 const variants = {
   normal: {
@@ -52,9 +52,9 @@ const variants = {
       ease: easing,
     },
   },
-}
+};
 
-const MotionImage = motion(Image)
+const MotionImage = motion(Image);
 
 const ProjectDescription = ({
   idx,
@@ -63,11 +63,11 @@ const ProjectDescription = ({
   ctaUrl,
   isLeft,
 }: {
-  idx?: number
-  title: string
-  description: string
-  ctaUrl: string
-  isLeft: boolean
+  idx?: number;
+  title: string;
+  description: string;
+  ctaUrl: string;
+  isLeft: boolean;
 }) => (
   <Container
     paddingX={5}
@@ -126,7 +126,7 @@ const ProjectDescription = ({
       </Button>
     )}
   </Container>
-)
+);
 
 const FeaturedCard = ({
   idx,
@@ -138,8 +138,8 @@ const FeaturedCard = ({
   ctaUrl,
   isMobile,
 }: FeaturedCardProps) => {
-  const isLeftImage = isMobile ? false : idx % 2 === 0
-  const bg = useColorModeValue('blackAlpha.50', 'whiteAlpha.200')
+  const isLeftImage = isMobile ? false : idx % 2 === 0;
+  const bg = useColorModeValue('blackAlpha.50', 'whiteAlpha.200');
   const CoverImage = () => (
     <MotionImage
       height={height}
@@ -154,7 +154,7 @@ const FeaturedCard = ({
       whileTap={variants.tap}
       fallback={<Skeleton height={height} width="100%" />}
     />
-  )
+  );
 
   return (
     <Box
@@ -182,6 +182,6 @@ const FeaturedCard = ({
         {!isLeftImage && <CoverImage />}
       </SimpleGrid>
     </Box>
-  )
-}
-export default FeaturedCard
+  );
+};
+export default FeaturedCard;

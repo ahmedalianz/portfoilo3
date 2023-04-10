@@ -1,22 +1,22 @@
 /* eslint-disable import/order */
 
-import React, { useEffect } from 'react'
-import { motion, useAnimation } from 'framer-motion'
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 
-import { fadeInUpSlower } from 'config/animations'
-import { useInView } from 'react-intersection-observer'
+import { fadeInUpSlower } from 'config/animations';
+import { useInView } from 'react-intersection-observer';
 
 const FadeInWhenVisible = ({ children }: { children: React.ReactNode }) => {
-  const controls = useAnimation()
+  const controls = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.1,
-  })
+  });
 
   useEffect(() => {
     if (inView) {
-      controls.start('animate')
+      controls.start('animate');
     }
-  }, [controls, inView])
+  }, [controls, inView]);
 
   return (
     <motion.div
@@ -28,7 +28,7 @@ const FadeInWhenVisible = ({ children }: { children: React.ReactNode }) => {
     >
       {children}
     </motion.div>
-  )
-}
+  );
+};
 
-export default FadeInWhenVisible
+export default FadeInWhenVisible;

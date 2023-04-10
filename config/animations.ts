@@ -4,8 +4,8 @@ const DURATIONS = {
   Normal: 0.8,
   Slow: 1.2,
   VerySlow: 1.8,
-}
-const easing = [0.6, -0.05, 0.01, 0.99]
+};
+const easing = [0.6, -0.05, 0.01, 0.99];
 
 const fadeInUp = {
   initial: {
@@ -20,7 +20,7 @@ const fadeInUp = {
       ease: easing,
     },
   },
-}
+};
 
 const fadeInUpSlower = {
   initial: {
@@ -35,7 +35,7 @@ const fadeInUpSlower = {
       ease: easing,
     },
   },
-}
+};
 
 const letterSpace = {
   initial: {
@@ -49,7 +49,7 @@ const letterSpace = {
       ease: easing,
     },
   },
-}
+};
 
 const simpleOpacity = {
   initial: {
@@ -62,7 +62,7 @@ const simpleOpacity = {
       ease: easing,
     },
   },
-}
+};
 
 const scaleUp = {
   initial: {
@@ -85,7 +85,7 @@ const scaleUp = {
       ease: easing,
     },
   },
-}
+};
 
 const menuAnim = {
   show: {
@@ -104,7 +104,7 @@ const menuAnim = {
       duration: DURATIONS.VeryFast,
     },
   },
-}
+};
 
 const avatarAnimation = {
   initial: {
@@ -122,7 +122,7 @@ const avatarAnimation = {
   exit: {
     opacity: 0,
   },
-}
+};
 
 const stagger = {
   animate: {
@@ -130,14 +130,14 @@ const stagger = {
       staggerChildren: 0.1,
     },
   },
-}
+};
 const galleryStagger = {
   animate: {
     transition: {
       staggerChildren: 0.2,
     },
   },
-}
+};
 
 export {
   DURATIONS,
@@ -151,4 +151,4 @@ export {
   menuAnim,
   scaleUp,
   avatarAnimation,
-}
+};

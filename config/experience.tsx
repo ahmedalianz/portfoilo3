@@ -1,20 +1,20 @@
-export type Company = string
+export type Company = string;
 
 export type CompanyDetail = {
-  name: string
-  longName: string
-  url: string
-  position: string
-  duration: string
+  name: string;
+  longName: string;
+  url: string;
+  position: string;
+  duration: string;
   logo: {
-    light: string
-    dark?: string
-  }
-  roles?: JSX.Element[]
-}
+    light: string;
+    dark?: string;
+  };
+  roles?: JSX.Element[];
+};
 
 export const Experiences: {
-  [key in Company]: CompanyDetail
+  [key in Company]: CompanyDetail;
 } = {
   WebSquids: {
     name: 'WebSquids LLC',
@@ -68,6 +68,6 @@ export const Experiences: {
       </>,
     ],
   },
-}
+};
 
-export const ExperiencesList = [Experiences.Ejada, Experiences.WebSquids]
+export const ExperiencesList = [Experiences.Ejada, Experiences.WebSquids];

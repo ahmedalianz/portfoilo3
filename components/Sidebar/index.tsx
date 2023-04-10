@@ -11,28 +11,28 @@ import {
   Text,
   useBreakpointValue,
   useColorMode,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 import {
   fadeInUp,
   letterSpace,
   scaleUp,
   simpleOpacity,
   stagger,
-} from 'config/animations'
+} from 'config/animations';
 
-import { SocialMedias } from 'config/sidebar'
-import { motion } from 'framer-motion'
-import styles from './styles.module.css'
+import { SocialMedias } from 'config/sidebar';
+import { motion } from 'framer-motion';
+import styles from './styles.module.css';
 
 const Sidebar = () => {
-  const { colorMode } = useColorMode()
-  const display = useBreakpointValue({ base: 'none', lg: 'block' })
-  const surNameSize = useBreakpointValue({ base: '3xl', md: '4xl' })
-  const MotionHeading = motion(Heading)
-  const MotionText = motion(Text)
-  const MotionStack = motion(Stack)
-  const MotionButton = motion(Button)
-  const MotionBox = motion(Box)
+  const { colorMode } = useColorMode();
+  const display = useBreakpointValue({ base: 'none', lg: 'block' });
+  const surNameSize = useBreakpointValue({ base: '3xl', md: '4xl' });
+  const MotionHeading = motion(Heading);
+  const MotionText = motion(Text);
+  const MotionStack = motion(Stack);
+  const MotionButton = motion(Button);
+  const MotionBox = motion(Box);
 
   return (
     <MotionBox
@@ -161,7 +161,7 @@ const Sidebar = () => {
         </MotionStack>
       </Container>
     </MotionBox>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

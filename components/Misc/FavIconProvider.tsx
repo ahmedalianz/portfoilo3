@@ -1,8 +1,8 @@
-import { useColorMode } from '@chakra-ui/react'
-import Head from 'next/head'
+import { useColorMode } from '@chakra-ui/react';
+import Head from 'next/head';
 
 const FavIconProvider = ({ children }: { children: JSX.Element }) => {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
   return (
     <>
       <Head>
@@ -17,7 +17,7 @@ const FavIconProvider = ({ children }: { children: JSX.Element }) => {
       </Head>
       {children}
     </>
-  )
-}
+  );
+};
 
-export default FavIconProvider
+export default FavIconProvider;

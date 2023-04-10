@@ -1,43 +1,43 @@
 /* eslint-disable import/order */
 
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion';
 import {
   Box,
   Image as ChkImage,
   SkeletonCircle,
   useColorModeValue,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 
-import { avatarAnimation } from 'config/animations'
-import { useEffect } from 'react'
+import { avatarAnimation } from 'config/animations';
+import { useEffect } from 'react';
 
 const AvatarImages = {
   DarkMode: '/profile-dark.jpeg',
   LightMode: '/profile-dark.jpeg',
-}
+};
 
 declare global {
   interface Window {
-    preloadedPictures?: HTMLImageElement[]
+    preloadedPictures?: HTMLImageElement[];
   }
 }
 
 const Avatar = () => {
-  const MotionBox = motion(Box)
+  const MotionBox = motion(Box);
   const imgAvatar = useColorModeValue(
     AvatarImages.LightMode,
     AvatarImages.DarkMode
-  )
+  );
   useEffect(() => {
     // Some nice preloading and caching
-    const images = [AvatarImages.DarkMode, AvatarImages.LightMode]
+    const images = [AvatarImages.DarkMode, AvatarImages.LightMode];
     const preloadedImages = images.map((imageSrc) => {
-      const img = new Image()
-      img.src = imageSrc
-      return img
-    })
-    window.preloadedPictures = preloadedImages
-  }, [])
+      const img = new Image();
+      img.src = imageSrc;
+      return img;
+    });
+    window.preloadedPictures = preloadedImages;
+  }, []);
   return (
     <AnimatePresence>
       <MotionBox
@@ -61,7 +61,7 @@ const Avatar = () => {
         />
       </MotionBox>
     </AnimatePresence>
-  )
-}
+  );
+};
 
-export default Avatar
+export default Avatar;
