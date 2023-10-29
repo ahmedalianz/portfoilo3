@@ -58,7 +58,7 @@ const ExperienceTab = () => {
         overflowY={'hidden'}
         className={styles.experienceTabs}
       >
-        {ExperiencesList.map((company) => (
+        {ExperiencesList.map(company => (
           <Tab
             key={`Tab-${company.name}`}
             fontSize="smaller"
@@ -88,7 +88,7 @@ const ExperienceTab = () => {
         ))}
       </TabList>
       <TabPanels>
-        {ExperiencesList.map((company) => (
+        {ExperiencesList.map(company => (
           <TabPanel key={`TabPanel-${company.name}`}>
             <SlideFade offsetY="20px" in={true}>
               <Stack spacing={0}>

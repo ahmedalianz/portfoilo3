@@ -26,12 +26,12 @@ const Avatar = () => {
   const MotionBox = motion(Box);
   const imgAvatar = useColorModeValue(
     AvatarImages.LightMode,
-    AvatarImages.DarkMode
+    AvatarImages.DarkMode,
   );
   useEffect(() => {
     // Some nice preloading and caching
     const images = [AvatarImages.DarkMode, AvatarImages.LightMode];
-    const preloadedImages = images.map((imageSrc) => {
+    const preloadedImages = images.map(imageSrc => {
       const img = new Image();
       img.src = imageSrc;
       return img;

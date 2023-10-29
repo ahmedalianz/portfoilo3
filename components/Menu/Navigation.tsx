@@ -29,7 +29,7 @@ const Navigation = () => {
 
   const bg = useColorModeValue(
     'rgba(237, 242, 247, 0.95)',
-    'rgba(18, 18, 18, 0.9)'
+    'rgba(18, 18, 18, 0.9)',
   );
 
   const borderColor = useColorModeValue('teal.500', 'cyan.200');
@@ -38,13 +38,13 @@ const Navigation = () => {
   const btnClassName = `${styles.blogBtn} ${!IsDark && styles.dark}`;
   const Icon = IsDark ? SunIcon : MoonIcon;
   const onMenuItemClick = useCallback(
-    (e) => {
+    e => {
       e.stopPropagation();
       if (isMobile) {
         toggleOpen();
       }
     },
-    [isMobile, toggleOpen]
+    [isMobile, toggleOpen],
   );
   const scrollDirection = useScrollDirection();
 

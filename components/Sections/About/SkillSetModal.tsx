@@ -44,7 +44,7 @@ const SkillList = ({
       <Divider marginBottom={4} />
       <SimpleGrid columns={2} spacing={4} paddingBottom={6}>
         <List spacing={3}>
-          {colOne.map((item) => (
+          {colOne.map(item => (
             <ListItem
               key={item.name}
               fontSize="small"
@@ -57,7 +57,7 @@ const SkillList = ({
           ))}
         </List>
         <List spacing={3}>
-          {colTwo.map((item) => (
+          {colTwo.map(item => (
             <ListItem
               key={item.name}
               fontSize="small"

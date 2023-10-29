@@ -132,7 +132,7 @@ const Sidebar = () => {
           </MotionButton>
 
           <MotionBox d="flex" variants={simpleOpacity}>
-            {SocialMedias.map((socMedia) => (
+            {SocialMedias.map(socMedia => (
               <Link
                 variant="description"
                 key={socMedia.label}
