@@ -96,7 +96,7 @@ const Sidebar = () => {
             className={styles.marginTopSmall}
             variants={fadeInUp}
           >
-            Web Developer
+            FrontEnd Developer
           </MotionHeading>
 
           <MotionText
@@ -112,17 +112,6 @@ const Sidebar = () => {
               Thank you!
             </Text>
             <br />
-          </MotionText>
-          <MotionText
-            variant="description"
-            fontSize="small"
-            paddingRight={{ lg: '12' }}
-            variants={fadeInUp}
-            maxWidth={{ base: '100%', lg: '80%' }}
-          >
-            I am a self-taught developer with a passion for learning new
-            technologies and building web/mobile applications. and i intend to
-            to learn More ,How time flies..
           </MotionText>
           <MotionButton
             size="lg"

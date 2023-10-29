@@ -21,7 +21,7 @@ export const Experiences: {
     longName: 'WebSquids Software Solutions',
     url: 'https://websquids.com/',
     position: 'Frontend Developer',
-    duration: 'Dec 2021 - Present',
+    duration: 'Sep 2020 - June 2022',
     logo: {
       light: '/worked_at_logos/websquids/light.png',
       dark: '/worked_at_logos/websquids/dark.png',
@@ -49,7 +49,7 @@ export const Experiences: {
     longName: 'Ejada Systems LTD',
     url: 'https://www.ejada.com/',
     position: 'Software Developer',
-    duration: 'Jul 2021 - Present',
+    duration: 'Jul 2022 - Present',
     logo: {
       light: '/worked_at_logos/ejada/logo.png',
       dark: '/worked_at_logos/ejada/logo.png',
@@ -58,11 +58,9 @@ export const Experiences: {
       <>Built most of the project common components. </>,
       <> Added detailed ReadMe that helped the new joiners a lot. </>,
       <>
-        {' '}
         Led a squad of 3 developers as their reviewer/supporter for a month.{' '}
       </>,
       <>
-        {' '}
         Meetings with integration and business teams to make field-level
         analyses for some sprints.
       </>,
